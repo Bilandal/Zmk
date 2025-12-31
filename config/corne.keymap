@@ -12,7 +12,7 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-mod-morph";
             label = "NEW_BEHAVIOR";
-            bindings = <&kp A>, <&kp SQT>;
+            bindings = <&kp A>, <&kp O>, <&kp U>, <&kp SQT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL)>;
