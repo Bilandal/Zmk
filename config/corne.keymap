@@ -10,13 +10,39 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
+        morph_a: morph_a {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
-            bindings = <&kp A>, <&kp O>, <&kp U>, <&kp SQT>;
+            label = "MORPH_A";
+            bindings = <&kp A>;
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        morph_o: morph_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_O";
+            bindings = <&kp O>, <&none>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL)>;
+            mods = <(MOD_RALT)>;
+        };
+
+        morph_u: morph_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_U";
+            bindings = <&kp U>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        morph_s: morph_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_S";
+            bindings = <&kp S>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
         };
     };
 
