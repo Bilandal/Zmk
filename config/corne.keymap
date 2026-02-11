@@ -4,6 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -14,11 +19,7 @@
         };
     };
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
